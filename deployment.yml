@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-openshift
-  labels: hello-openshift
-    app: hello-openshift
+  labels:
+    app: hello-openshift-deployment
 spec:
   replicas: 3
   selector:
