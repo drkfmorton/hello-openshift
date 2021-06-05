@@ -8,7 +8,7 @@ spec:
   port:
     targetPort: web
   to:
-    kind: Service
+    kind:
     name: hello-openshift
     weight: 100
   tls:
