@@ -3,9 +3,9 @@ kind: Route
 metadata:
   labels:
     app: hello-openshift
-  name: route-unsecured-hello-openshift
+  name: hello-openshift
 spec:
-  port: 8090
+  port:
     targetPort: web
   to:
     kind: Service
