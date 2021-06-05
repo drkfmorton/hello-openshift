@@ -3,12 +3,12 @@ kind: Route
 metadata:
   labels:
     app: hello-openshift
-  name: hello-openshift
+  name: route-unsecured-hello-openshift
 spec:
   port: 8090
     targetPort: web
   to:
-    kind: 
+    kind: Service
     name: hello-openshift
     weight: 100
   tls:
